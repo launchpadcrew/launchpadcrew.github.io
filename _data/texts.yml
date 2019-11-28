@@ -1,4 +1,8 @@
 - name: title_text
-  value: We help the world to discover your awesomeness 
+  value: We help the world to discover your awesomeness
+- name: site_title
+  value: Launchpadcrew | Content Creator & Curator of Awesome Products
+- name: search_keyword
+  value: content marketing, video production, video creation, marketing campaign, kickstarter, kickstarter campaign, marketing, marketing video
 - name: intro_text
-  value: Launchpad Crew 
+  value: Launchpad Crew

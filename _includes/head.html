@@ -1,10 +1,23 @@
-{% assign title = site.data.texts | where:"name","title_text" %}
+{% assign title = site.data.texts | where:"name","site_title" %}
+{% assign slogan = site.data.texts | where:"name","title_text" %}
+{% assign search_keyword = site.data.texts | where:"name","search_keyword" %}
 <head>
   <title>{{title.first.value}}</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+  <meta content="{{title.first.value}}" name="title">
+  <meta content="{{slogan.first.value}}" name="description">
+  <meta content="{{search_keyword.first.value}}" name="keywords">
+  <meta content="index, follow" name="robots">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+  <meta content="English" name="language">
+  <meta content="1 days" name="revisit-after">
+  <!-- OG tags -->
+  <meta content="Launchpadcrew" property="og:title">
+  <meta content="Launchpadcrew" property="og:site_name">
+  <meta content="launchpadcrew.com" property="og:url">
+  <meta content="{{slogan.first.value}}" property="og:description">
+  <meta content="website" property="og:type">
+  <meta content="https://source.unsplash.com/user/sophie_y/DuBNA1QMpPA" property="og:image">
+  <link href="assets/css/main.css" rel="stylesheet"/>
+</head>
