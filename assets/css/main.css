@@ -2495,7 +2495,7 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
-			margin: 3rem 0;
+			margin: 0.5rem 0;
 			width: 100%;
 		}
 
@@ -2941,6 +2941,8 @@ input, select, textarea {
 			outline: 0;
 			position: relative;
 			width: calc(50% - 1.25rem);
+			pointer-events: none;
+    		cursor: default;
 		}
 
 			.gallery a img {
@@ -2957,11 +2959,11 @@ input, select, textarea {
 			}
 
 				.gallery a.landscape img {
-					height: 30vw;
+					height: 22vw;
 				}
 
 			.gallery a.portrait img {
-				height: 30vw;
+				height: 25vw;
 			}
 
 		.gallery .modal {
@@ -3883,4 +3885,12 @@ input, select, textarea {
 
 	.underline {
 		text-decoration: underline;
+	}
+
+	.italic {
+		font-style: italic;
+	}
+
+	.bold {
+		font-weight: 600;
 	}
